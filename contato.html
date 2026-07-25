@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Barisch Technologies</title>
+<meta name="description" content="Comece um projeto com Barisch Technologies. Resposta em até 1 dia útil, contrato com CNPJ e nota fiscal.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">BARISCH</span>
+      <span class="brand-sub mono">Technologies</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="trabalhos.html">Trabalhos</a>
+      <a href="contato.html" class="active">Contato</a>
+    </nav>
+    <a href="#briefing" class="btn btn-primary">Enviar briefing</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact no-border" id="contato">
+    <div class="wrap contact-grid">
+      <div class="rv">
+        <div class="eyebrow mono">Contato</div>
+        <h1 class="section-title display">Vamos conversar sobre o seu projeto.</h1>
+        <p class="section-lead">Me diga em algumas linhas qual é o problema. Respondo em até 1 dia útil com uma primeira leitura do projeto — e digo na hora se não for pra mim.</p>
+
+        <div class="chan">
+          <!-- TROQUE SEU_NUMERO pelo seu WhatsApp: 55 + DDD + número -->
+          <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener">
+            <span class="mono">WhatsApp</span><strong>Abrir conversa →</strong>
+          </a>
+          <a href="mailto:contato@barischtech.com.br">
+            <span class="mono">E-mail</span><strong>contato@barischtech.com.br</strong>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <span class="mono">LinkedIn</span><strong>Ver perfil →</strong>
+          </a>
+          <a href="https://calendly.com/" target="_blank" rel="noopener">
+            <span class="mono">Calendário</span><strong>Agendar call de 45 min →</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="rv">
+        <form id="briefing">
+          <div class="field">
+            <label for="f-nome">Nome</label>
+            <input id="f-nome" name="nome" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-empresa">Empresa</label>
+            <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-email">E-mail</label>
+            <input id="f-email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="f-telefone">Telefone ou WhatsApp</label>
+            <input id="f-telefone" name="telefone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="f-tipo">Tipo de projeto</label>
+            <select id="f-tipo" name="tipo">
+              <option>Site institucional</option>
+              <option>Aplicação web sob medida</option>
+              <option>E-commerce ou integração</option>
+              <option>Resgate de sistema legado</option>
+              <option>Manutenção de sistema existente</option>
+              <option>Ainda não sei</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-orcamento">Orçamento estimado</label>
+            <select id="f-orcamento" name="orcamento">
+              <option>Ainda não sei</option>
+              <option>Até R$ 20 mil</option>
+              <option>R$ 20 a 50 mil</option>
+              <option>R$ 50 a 100 mil</option>
+              <option>Acima de R$ 100 mil</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-prazo">Prazo desejado</label>
+            <input id="f-prazo" name="prazo" type="text" placeholder="Ex.: até o fim do trimestre">
+          </div>
+          <div class="field">
+            <label for="f-msg">O que você precisa resolver</label>
+            <textarea id="f-msg" name="mensagem" required placeholder="Conte o contexto: o que já existe hoje, o que está travando, o que você imagina como resultado."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar briefing <span class="btn-arrow">→</span></button>
+          <p class="form-note">O botão abre seu programa de e-mail com a mensagem pronta. Prefere WhatsApp? O link está ao lado.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="rv">
+        <div class="eyebrow mono">Dúvidas</div>
+        <h2 class="section-title display">Perguntas que sempre aparecem</h2>
+      </div>
+      <div class="faq rv">
+        <details>
+          <summary>Quanto custa um projeto?</summary>
+          <div class="faq-a">Depende do escopo, e eu só passo valor depois de entender o que você precisa. Um site institucional bem feito e um sistema interno completo são projetos de portes bem diferentes. Na primeira call eu já consigo dar uma faixa realista, sem enrolação.</div>
+        </details>
+        <details>
+          <summary>Em quanto tempo fica pronto?</summary>
+          <div class="faq-a">Site institucional: normalmente de 4 a 8 semanas. Aplicação sob medida: a partir de 8 semanas, conforme o escopo. O prazo entra no contrato — se eu não conseguir cumprir, eu aviso antes, não depois.</div>
+        </details>
+        <details>
+          <summary>O código fica comigo?</summary>
+          <div class="faq-a">Sim. Repositório, domínio e servidores ficam em contas suas, no nome da sua empresa. Você não fica preso a mim: qualquer desenvolvedor consegue assumir o projeto, porque tudo vai documentado.</div>
+        </details>
+        <details>
+          <summary>Você dá manutenção depois?</summary>
+          <div class="faq-a">Dou. Os primeiros 30 dias de correção de defeitos já vêm inclusos. Depois disso, você pode contratar um plano mensal com atualizações, monitoramento e um número de horas de evolução por mês.</div>
+        </details>
+        <details>
+          <summary>Já tenho um site. Dá pra aproveitar?</summary>
+          <div class="faq-a">Quase sempre dá. Eu faço uma análise do que existe hoje e digo com honestidade o que vale manter, o que vale reescrever e o que dá para fazer por partes, sem tirar o site do ar.</div>
+        </details>
+        <details>
+          <summary>Você trabalha com empresas de fora do Brasil?</summary>
+          <div class="faq-a">Sim. Atendo em português e inglês, com contrato e emissão de invoice. Trabalho remoto em fusos das Américas e da Europa sem problema.</div>
+        </details>
+        <details>
+          <summary>Como funciona o pagamento?</summary>
+          <div class="faq-a">Projetos fechados normalmente são divididos em 3 parcelas: sinal na assinatura do contrato, meio-de-caminho na entrega do MVP e final no lançamento. Pagamento por PIX ou boleto, com nota fiscal.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="mono">Barisch Technologies LTDA · CNPJ 00.000.000/0001-00 · São Paulo, SP</div>
+    <div class="foot-links mono">
+      <a href="index.html">Home</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="trabalhos.html">Trabalhos</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

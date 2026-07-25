@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Substitua pela URL real do seu site quando publicar:
+# Sitemap: https://barischtech.com.br/sitemap.xml
