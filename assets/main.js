@@ -2,46 +2,13 @@
    Barisch Technologies — shared behavior
    Runs on every page. Each feature checks if its target
    exists before doing anything, so pages that don't have
-   a meter or a form silently skip that block.
+   a form silently skip that block.
    ========================================================= */
 
 (function () {
   "use strict";
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  /* --- assinatura: medir a própria página (só na home) --- */
-  function paint(el, value, decimals) {
-    if (!el) return;
-    if (reduce) { el.textContent = value.toFixed(decimals); return; }
-    var start = performance.now(), dur = 900;
-    (function tick(now) {
-      var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = (value * eased).toFixed(decimals);
-      if (p < 1) requestAnimationFrame(tick);
-    })(start);
-  }
-
-  var meter = document.getElementById("meter");
-  if (meter) {
-    window.addEventListener("load", function () {
-      setTimeout(function () {
-        var nav = performance.getEntriesByType("navigation")[0];
-        var secs = nav
-          ? (nav.domContentLoadedEventEnd - nav.startTime) / 1000
-          : (performance.now() / 1000);
-        if (!isFinite(secs) || secs <= 0) secs = performance.now() / 1000;
-
-        var reqs = performance.getEntriesByType("resource").length + 1;
-        var nodes = document.getElementsByTagName("*").length;
-
-        paint(document.getElementById("m-time"), secs, 2);
-        paint(document.getElementById("m-req"), reqs, 0);
-        paint(document.getElementById("m-dom"), nodes, 0);
-      }, 60);
-    });
-  }
 
   /* --- revelar seções no scroll --- */
   var targets = document.querySelectorAll(".rv");

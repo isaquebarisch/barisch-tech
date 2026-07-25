@@ -15,7 +15,7 @@ barisch-tech/
 ├── contato.html        Formulário e canais de contato
 ├── assets/
 │   ├── styles.css      Estilos compartilhados (tokens, componentes)
-│   └── main.js         JS compartilhado (reveal on scroll, form, meter)
+│   └── main.js         JS compartilhado (reveal on scroll, form)
 ├── robots.txt          Instruções para buscadores
 ├── .gitignore
 └── README.md           Este arquivo
@@ -37,10 +37,11 @@ Abra o VS Code, use `Cmd/Ctrl + Shift + F` (buscar em todos os arquivos) e subst
 | `00.000.000/0001-00` | seu CNPJ |
 | `[X] anos` (em `index.html`) | seu tempo de experiência |
 | Links `https://www.linkedin.com/` | URL real do seu LinkedIn |
-| Link `https://calendly.com/` | URL real do seu Calendly (opcional) |
 
-Depois abra `trabalhos.html` e `index.html` e troque os projetos entre `[colchetes]`
-por casos reais seus. O mesmo vale para os depoimentos (blockquotes).
+`trabalhos.html` está com casos placeholder entre `[colchetes]` e não está linkado
+no menu ainda — quando tiver um cliente real, preencha os casos e adicione o link
+de volta em **todos** os HTMLs (nav e rodapé). O mesmo vale para os depoimentos
+(blockquotes) em `index.html`.
 
 ---
 

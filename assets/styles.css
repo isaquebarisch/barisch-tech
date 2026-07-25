@@ -121,29 +121,6 @@ img{max-width:100%;display:block}
 .hero-lead{font-size:clamp(1.05rem,1.9vw,1.28rem);color:var(--slate);max-width:54ch;margin-bottom:36px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:56px}
 
-/* signature: live measurement of this page */
-.meter{
-  background:var(--ink);color:var(--paper);border-radius:var(--radius);
-  padding:26px clamp(20px,3vw,34px);
-  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px;align-items:end;
-}
-.meter-label{color:#8B95A3;margin-bottom:12px;display:block}
-.meter-big{
-  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;
-  font-weight:800;font-size:clamp(2.4rem,5.6vw,3.9rem);line-height:1;
-  letter-spacing:-0.03em;color:var(--sinal);
-}
-.meter-big span{font-size:.42em;color:var(--paper);margin-left:4px;letter-spacing:0}
-.meter-small{
-  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;
-  font-weight:700;font-size:clamp(1.3rem,2.6vw,1.85rem);line-height:1;letter-spacing:-0.02em;
-}
-.meter-note{
-  grid-column:1/-1;border-top:1px solid #262C35;padding-top:16px;margin-top:6px;
-  color:#8B95A3;font-family:"IBM Plex Mono",monospace;font-size:.78rem;
-  letter-spacing:.04em;text-transform:none;
-}
-
 /* ---------- services list ---------- */
 .svc-list{margin-top:52px;border-top:1px solid var(--line)}
 .svc{
@@ -155,7 +132,6 @@ img{max-width:100%;display:block}
 .svc-idx{color:var(--cobalt);padding-top:7px}
 .svc h3{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;font-weight:700;font-size:1.42rem;letter-spacing:-0.02em;line-height:1.15}
 .svc p{color:var(--slate);font-size:1rem}
-.svc-meta{margin-top:12px;color:var(--slate);opacity:.85}
 
 /* ---------- service detail (servicos.html) ---------- */
 .svc-detail{padding-block:clamp(56px,7vw,88px);border-top:1px solid var(--line)}
@@ -174,23 +150,6 @@ img{max-width:100%;display:block}
 .svc-meta-cell{background:var(--panel);padding:16px 18px}
 .svc-meta-cell dt{color:var(--slate);margin-bottom:6px}
 .svc-meta-cell dd{font-weight:600;font-size:1rem}
-
-/* ---------- work / cards ---------- */
-.work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:52px}
-.card{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:28px;display:flex;flex-direction:column;
-  transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease;
-}
-.card:hover{border-color:var(--cobalt);transform:translateY(-4px);box-shadow:0 14px 34px rgba(14,17,22,.09)}
-.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--slate);margin-bottom:22px}
-.card h3{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;font-weight:700;font-size:1.5rem;letter-spacing:-0.02em;line-height:1.1;margin-bottom:12px}
-.card p{color:var(--slate);font-size:.99rem;margin-bottom:24px}
-.spec{border-top:1px solid var(--line);margin-top:auto;padding-top:16px;display:grid;gap:9px}
-.spec-row{display:flex;justify-content:space-between;gap:16px;font-size:.86rem}
-.spec-row dt{color:var(--slate);font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;padding-top:3px;flex:none}
-.spec-row dd{text-align:right;font-weight:500}
-.spec-row dd.win{color:var(--cobalt);font-weight:600}
 
 /* ---------- case study (trabalhos.html) ---------- */
 .case{padding-block:clamp(56px,8vw,96px);border-top:1px solid var(--line)}
@@ -240,22 +199,6 @@ img{max-width:100%;display:block}
 .quote cite{font-style:normal;font-weight:600;font-size:.95rem}
 .quote small{color:var(--slate);font-size:.85rem}
 
-/* ---------- faq ---------- */
-.faq{margin-top:48px;border-top:1px solid var(--line)}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{
-  list-style:none;cursor:pointer;padding:24px 40px 24px 0;position:relative;
-  font-weight:600;font-size:1.1rem;transition:color .16s;
-}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{
-  content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
-  font-family:"IBM Plex Mono",monospace;font-size:1.45rem;color:var(--cobalt);font-weight:400;
-}
-.faq details[open] summary::after{content:"−"}
-.faq summary:hover{color:var(--cobalt)}
-.faq-a{padding:0 clamp(0px,8vw,90px) 26px 0;color:var(--slate)}
-
 /* ---------- CTA strip ---------- */
 .cta-strip{background:var(--ink);color:var(--paper);padding-block:clamp(56px,7vw,88px)}
 .cta-strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
@@ -287,14 +230,6 @@ form{display:grid;gap:14px}
 form .btn-primary{justify-content:center;margin-top:6px}
 .form-note{color:#8B95A3;font-size:.83rem}
 
-/* contact page FAQ inverse styling */
-.contact .faq{border-top-color:#262C35}
-.contact .faq details{border-bottom-color:#262C35}
-.contact .faq summary{color:var(--paper)}
-.contact .faq summary::after{color:var(--sinal)}
-.contact .faq summary:hover{color:var(--sinal)}
-.contact .faq-a{color:#A7B0BC}
-
 /* ---------- footer ---------- */
 footer{background:var(--ink);color:#8B95A3;padding-block:38px;border-top:1px solid #262C35}
 .foot-in{display:flex;flex-wrap:wrap;gap:18px 34px;align-items:center;justify-content:space-between}
@@ -308,8 +243,6 @@ footer{background:var(--ink);color:#8B95A3;padding-block:38px;border-top:1px sol
 /* ---------- responsive ---------- */
 @media(max-width:860px){
   .nav-links{display:none}
-  .meter{grid-template-columns:1fr 1fr;gap:20px}
-  .meter-big{grid-column:1/-1}
   .svc{grid-template-columns:auto 1fr;row-gap:10px}
   .svc-idx{grid-row:1/3}
   .svc-detail-grid,.about,.contact-grid,.case-body{grid-template-columns:1fr}
@@ -318,7 +251,7 @@ footer{background:var(--ink);color:#8B95A3;padding-block:38px;border-top:1px sol
 @media(max-width:520px){
   body{font-size:16px}
   .hero-cta .btn{width:100%;justify-content:center}
-  .card,.quote{padding:24px}
+  .quote{padding:24px}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
