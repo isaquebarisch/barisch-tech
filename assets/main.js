@@ -49,7 +49,7 @@
       ];
       var corpo = linhas.join("\n");
       window.location.href =
-        "mailto:contato@barischtech.com.br" +
+        "mailto:isaquebarisch@gmail.com" +
         "?subject=" + encodeURIComponent(assunto) +
         "&body=" + encodeURIComponent(corpo);
     });
